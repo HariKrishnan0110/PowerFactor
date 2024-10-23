@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double voltage, current, realPower, apparentPower, powerFactor;
+
+    // Input voltage and current
+    cout << "Enter the voltage (V): ";
+    cin >> voltage;
+    cout << "Enter the current (I): ";
+    cin >> current;
+
+    // Input real power
+    cout << "Enter the real power (P) in watts: ";
+    cin >> realPower;
+
+    // Calculate apparent power
+    apparentPower = voltage * current;
+
+    // Calculate power factor
+    powerFactor = realPower / apparentPower;
+
+    // Conditional statement
+    if (powerFactor > 0.9) {
+        cout << "Provide if operation";
+} else {
+        cout << "Provide else operation";
+}
+
+    return 0;
+}
